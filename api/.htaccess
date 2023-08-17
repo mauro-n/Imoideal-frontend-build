@@ -1,0 +1,5 @@
+# This htaccess file redirects all the nested urls
+# for the index php file
+RewriteEngine on
+RewriteCond %{REQUEST_URI} !^/index\.php$
+RewriteRule ^ index.php [L]
